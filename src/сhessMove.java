@@ -79,8 +79,8 @@ public class сhessMove {
         // увеличилась на 2 и при этом разность координат Y1 и Y2 уменьшалась или увеличилась на 1
         int dx = Math.abs(start.getX() - move.getX()); // модуль разницы координат X
         int dy = Math.abs(start.getY() - move.getY()); //модуль разницы координат Y
-        if (Figure.KNIGHT == Figure.valueOf(s1) && dx==1 && dy==2||
-        dx==2 &&dy==1){
+        if (Figure.KNIGHT == Figure.valueOf(s1) && (dx==1 && dy==2)||(
+        dx==2 &&dy==1)){
             System.out.println(s1 + " true, can move");
             return true;
         }
