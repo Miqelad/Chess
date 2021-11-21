@@ -63,8 +63,7 @@ public class сhessMove {
         // что ферзь ходит и как ладья и как слон,
         // мы уже анализировали и писали код для этих фигур поэтому просто объединим
         // два условия в одно
-        if (Figure.QUEEN==Figure.valueOf(s1)&&Math.abs(start.getX()- move.getX())<=1
-                && Math.abs(start.getY()- move.getY())<=1
+        if (Figure.QUEEN==Figure.valueOf(s1)&&Math.abs(start.getX() - move.getX()) == Math.abs(start.getY() - move.getY())
                 || start.getX() - move.getX() == 0
                 || start.getY() - move.getY() == 0){
             System.out.println(s1 + " true, can move");
